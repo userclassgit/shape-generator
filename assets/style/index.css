@@ -29,7 +29,6 @@ body {
 
 h2 {
   color: var(--font-color);
-  font-weight: 100;
 }
 
 .wrapper {
@@ -38,13 +37,13 @@ h2 {
 
 .shape-box {
   width: 34rem;
-  height: 25rem;
+  height: 24.295rem;
   padding: 10px;
   background-color: var(--gray-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, var(--shape-width-height));
-  grid-gap: 10px;
-  justify-content: center;
+  grid-gap: 12.5px;
+  justify-content: start;
   /* align-content aligns grid rows not the content inside the rows */
   align-content: start;
 }
@@ -59,4 +58,79 @@ p {
 }
 .circle {
   border-radius: 50%;
+}
+
+
+/* ==============================Font============================== */
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
