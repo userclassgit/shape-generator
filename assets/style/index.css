@@ -1,8 +1,9 @@
 @charset "utf-8";
 
-/* :root {
-
-} */
+:root {
+  --gray-color: rgb(99, 99, 99);
+  --font-color: #fff;
+}
 
 .container {
     width: min(100% - 30px, 1080px);
@@ -21,4 +22,25 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: rgb(32, 32, 32);
+  height: 100vh;
+}
+
+h2 {
+  color: var(--font-color);
+  font-weight: 100;
+}
+
+.wrapper {
+  flex-direction: column;
+}
+
+.shape-box {
+  width: 34rem;
+  height: 25rem;
+  background-color: var(--gray-color);
+}
+
+p {
+  color: var(--font-color);
 }
