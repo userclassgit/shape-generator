@@ -3,6 +3,7 @@
 :root {
   --gray-color: rgb(99, 99, 99);
   --font-color: #fff;
+  --shape-width-height: 4rem;
 }
 
 .container {
@@ -38,9 +39,24 @@ h2 {
 .shape-box {
   width: 34rem;
   height: 25rem;
+  padding: 10px;
   background-color: var(--gray-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--shape-width-height));
+  grid-gap: 10px;
+  justify-content: center;
+  /* align-content aligns grid rows not the content inside the rows */
+  align-content: start;
 }
 
 p {
   color: var(--font-color);
+}
+
+.square, .circle {
+  width: var(--shape-width-height);
+  height: var(--shape-width-height);
+}
+.circle {
+  border-radius: 50%;
 }
