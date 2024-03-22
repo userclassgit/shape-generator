@@ -93,6 +93,10 @@ p {
   border-radius: 50%;
 }
 
+.square {
+  border-radius: var(--border-radius);
+}
+
 .shape-info {
   visibility: hidden;
 }
