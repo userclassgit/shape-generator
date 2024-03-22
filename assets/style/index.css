@@ -4,6 +4,7 @@
   --gray-color: rgb(99, 99, 99);
   --font-color: #fff;
   --shape-width-height: 4rem;
+  --border-radius: 5px;
 }
 
 .container {
@@ -33,12 +34,37 @@ h2 {
 
 .wrapper {
   flex-direction: column;
+  gap: 15px;
+}
+
+.controls {
+  width: 100%;
+  justify-content: space-between;
+  height: 2.5rem;
+  margin-bottom: .2rem;
+
+  .shape-selection, .color-selection {
+    width: 38%;
+    background-color: var(--gray-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--font-color);
+  }
+
+  .create-button {
+    width: 20%;
+    background-color: rgb(255, 114, 43);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--font-color);
+  }
 }
 
 .shape-box {
   width: 34rem;
   height: 24.295rem;
   padding: 10px;
+  border-radius: var(--border-radius);
   background-color: var(--gray-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, var(--shape-width-height));
@@ -46,6 +72,7 @@ h2 {
   justify-content: start;
   /* align-content aligns grid rows not the content inside the rows */
   align-content: start;
+  transform: scaleY(-1);
 }
 
 p {
@@ -60,6 +87,9 @@ p {
   border-radius: 50%;
 }
 
+.shape-info {
+  visibility: hidden;
+}
 
 /* ==============================Font============================== */
 
